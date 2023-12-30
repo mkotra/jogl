@@ -8,9 +8,9 @@ import java.util.logging.Logger;
 
 public class SceneView implements GLEventListener {
 
-    private static Logger logger = Logger.getLogger(SceneView.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(SceneView.class.getName());
 
-    float angle = 0.1f; // Przykładowy kąt rotacji
+    float angle = 0.1f;
     private long lastUpdateTime;
 
     @Override
@@ -26,7 +26,7 @@ public class SceneView implements GLEventListener {
 
     @Override
     public void display(GLAutoDrawable drawable) {
-        logger.info("display called! angle: " + angle);
+        LOGGER.info("display called! angle: " + angle);
 
         GL2 gl = drawable.getGL().getGL2();
 
