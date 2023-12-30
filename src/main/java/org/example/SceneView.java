@@ -36,7 +36,7 @@ public class SceneView implements GLEventListener {
             if (angle > 1.0f) {
                 angle = 0.1f;
             }
-            angle += 0.1f; // Zwiększenie kąta rotacji
+            angle += 0.1f;
             lastUpdateTime = currentTime;
         }
 
